@@ -1,14 +1,12 @@
 import React from 'react'
 import bullet from "../assets/bullet.svg"
-import overlay from "../assets/overlay.svg"
+
 
 export default function Testimonials() {
   return (
     <>
       <div className=" relative About us mt-[150px] flex flex-col gap-[15px] py-[40px] items-center justify-center">
-        <div className=" absolute w-full h-full opacity-45 flex items-start justify-center">
-          <img src={overlay} alt="" />
-        </div>
+        
 
         <div className="w-full flex items-center justify-center gap-2">
           <img src={bullet} alt="" />
