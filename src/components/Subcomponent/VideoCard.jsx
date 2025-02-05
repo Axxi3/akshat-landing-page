@@ -2,12 +2,13 @@ import React from 'react';
 
 export default function VideoCard() {
   return (
-    <div className="border flex-grow items-center justify-center border-white rounded-lg p-3 bg-[#1a1a1a]">
-      <img
-        src="https://placehold.co/322x677"
-        alt="Video Thumbnail"
-        className="rounded-md"
-      />
+    <div className="border lg:flex-grow md:w-[45%] w-full items-center justify-center border-white rounded-lg p-3 bg-[#1a1a1a]">
+     <img
+  src="https://placehold.co/1280x5000"
+  alt="Video Thumbnail"
+  className="rounded-md h-screen w-full object-cover"
+/>
+
 
       <div className="flex gap-3 mt-3">
         <img

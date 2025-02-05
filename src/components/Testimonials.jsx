@@ -10,7 +10,7 @@ export default function Testimonials() {
 
         <div className="w-full flex items-center justify-center gap-2">
           <img src={bullet} alt="" />
-          <div className="About us text uppercase text-[25px] text-[#c858ff]">
+          <div className="About us text uppercase text-[25px] text-[#F7B05B]">
             Customer Stories
           </div>
         </div>
@@ -21,7 +21,7 @@ export default function Testimonials() {
         </div>
 
         <div className="w-full px-[40px] mt-[80px]">
-          <div className="flex gap-[80px] items-center ">
+          <div className="flex md:flex-row flex-col gap-[80px] items-center ">
           <div className=" flex flex-col w-fit items-center">
               <p className="text-[18px] opacity-75 text-center ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -94,25 +94,25 @@ export default function Testimonials() {
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
 
-        <div className=" flex items-center gap-[40px] justify-center mt-6">
+        <div className=" flex lg:flex-row flex-col items-center gap-[30px] justify-center mt-6">
         <div className="flex flex-col items-center justify-center">
-            <h2 className='text-[65px] font-medium'>65783</h2>
-            <p className='text-[26px]'>Videos Created</p>
+            <h2 className='lg:text-[65px] text-[45px] font-medium'>65783</h2>
+            <p className='lg:text-[26px] text-[22px]'>Videos Created</p>
           </div>
-          <div className="h-[1px] w-[120px] rotate-90 bg-gradient-to-r from-transparent via-white to-transparent"></div>
+          <div className="h-[1px] w-[120px] lg:rotate-90 bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
           <div className="flex flex-col items-center justify-center">
-            <h2 className='text-[65px] font-medium'>10</h2>
-            <p className='text-[26px]'>Million + Views</p>
+            <h2 className='lg:text-[65px] text-[45px]  font-medium'>10</h2>
+            <p className='lg:text-[26px] text-[22px]'>Million + Views</p>
           </div>
 
 
-          <div className="h-[1px] w-[120px] rotate-90 bg-gradient-to-r from-transparent via-white to-transparent"></div>
+          <div className="h-[1px] w-[120px] lg:rotate-90 bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
 
           <div className="flex flex-col items-center justify-center">
-            <h2 className='text-[65px] font-medium'>143564</h2>
-            <p className='text-[26px] font-light'>Total Views Generated</p>
+            <h2 className='lg:text-[65px] text-[45px] font-medium'>143564</h2>
+            <p className='lg:text-[26px] text-[22px] font-light'>Total Views Generated</p>
           </div>
         </div>
 

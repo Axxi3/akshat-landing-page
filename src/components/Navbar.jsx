@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav className="flex relative items-center  justify-between pt-[30px]">
-      <div className="LOGO absolute left-0">
+    <nav className="flex relative items-center  lg:justify-between justify-center pt-[30px]">
+      <div className="LOGO absolute left-0 lg:flex hidden">
         <h2 className="text-[26px]">
           Syncwave<span className="text-[#F7B05B]">Media</span>
         </h2>
