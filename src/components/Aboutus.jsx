@@ -70,7 +70,7 @@ export default function Aboutus() {
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
-              src="https://fast.wistia.net/embed/iframe/l2qf7yiqhb?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
+              src="https://fast.wistia.net/embed/iframe/lygms2lvk9?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
               title="Best 3 Video"
               allow="autoplay; fullscreen"
               allowTransparency="true"
@@ -86,7 +86,7 @@ export default function Aboutus() {
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
-              src="https://fast.wistia.net/embed/iframe/wtfwy712ah?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
+              src="https://fast.wistia.net/embed/iframe/6hw82ijj7m?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
               title="Best 3 Video"
               allow="autoplay; fullscreen"
               allowTransparency="true"
@@ -102,7 +102,7 @@ export default function Aboutus() {
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
-              src="https://fast.wistia.net/embed/iframe/x02ce5u11i?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
+              src="https://fast.wistia.net/embed/iframe/l933suurty?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
               title="Best 3 Video"
               allow="autoplay; fullscreen"
               allowTransparency="true"

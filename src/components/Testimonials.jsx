@@ -2,6 +2,9 @@ import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import bullet from "../assets/bullet.svg";
 import Stats from './Subcomponent/Stats';
+import test1 from "../assets/test1.png"
+import test2 from "../assets/test2.png"
+import test3 from "../assets/test3.png"
 
 export default function Testimonials() {
   const ref = useRef(null);
@@ -51,12 +54,12 @@ export default function Testimonials() {
 
               <div className="flex flex-col gap-3 mt-3 items-center">
                 <img
-                  src="https://placehold.co/75"
+                  src={test1}
                   className="rounded-[100px] w-[80px] h-[80px]"
                   alt="Profile"
                 />
                 <div className="flex flex-col justify-center items-center w-fit">
-                  <h3 className="text-[20px] opacity-90">Roson Monses</h3>
+                  <h3 className="text-[20px] opacity-90">Sahil Kasana</h3>
                   <p className="text-[18px] ">Relationship Coach</p>
                 </div>
               </div>
@@ -70,12 +73,12 @@ export default function Testimonials() {
 
               <div className="flex flex-col gap-3 mt-3 items-center">
                 <img
-                  src="https://placehold.co/75"
+                  src={test2}
                   className="rounded-[100px] w-[80px] h-[80px]"
                   alt="Profile"
                 />
                 <div className="flex flex-col justify-center items-center w-fit">
-                  <h3 className="text-[20px] opacity-90">Roson Monses</h3>
+                  <h3 className="text-[20px] opacity-90">Joy Anand</h3>
                   <p className="text-[18px] ">Relationship Coach</p>
                 </div>
               </div>
@@ -89,12 +92,12 @@ export default function Testimonials() {
 
               <div className="flex flex-col gap-3 mt-3 items-center">
                 <img
-                  src="https://placehold.co/75"
+                  src={test3}
                   className="rounded-[100px] w-[80px] h-[80px]"
                   alt="Profile"
                 />
                 <div className="flex flex-col justify-center items-center w-fit">
-                  <h3 className="text-[20px] opacity-90">Roson Monses</h3>
+                  <h3 className="text-[20px] opacity-90">Kamilah Stevenson</h3>
                   <p className="text-[18px] ">Relationship Coach</p>
                 </div>
               </div>

@@ -1,41 +1,67 @@
-import React from 'react';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react"; // Import icons for menu toggle
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="flex relative items-center lg:justify-between justify-center pt-[30px]">
-      <div className="LOGO absolute left-0 lg:flex hidden">
-        <h2 className="text-[26px]">
+    <nav className="flex items-center justify-between p-5 relative z-50 bg-transparent">
+      {/* LOGO */}
+      <div className="LOGO">
+        <h2 className="text-[26px] font-bold">
           Syncwave<span className="text-[#F7B05B]">Media</span>
         </h2>
       </div>
 
-      <ul className="bg-[#1a1a1a] flex gap-[35px] py-[18px] rounded-4xl px-[45px] mx-auto">
-        <li>
-          <a href="#process" className="opacity-70 cursor-pointer text-[14px] hover:text-[#F7B05B] duration-100 transition-all">
-            Process
-          </a>
-        </li>
-        <li>
-          <a href="#testimonial" className="opacity-70 cursor-pointer text-[14px] hover:text-[#F7B05B] duration-100 transition-all">
-            Testimonial
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="opacity-70 cursor-pointer text-[14px] hover:text-[#F7B05B] duration-100 transition-all">
-            About us
-          </a>
-        </li>
-        <li>
-          <a href="#FAQ" className="opacity-70 cursor-pointer text-[14px] hover:text-[#F7B05B] duration-100 transition-all">
-            Faqs
-          </a>
-        </li>
-        <li>
-          <a href="#get-in-touch" className="opacity-70 cursor-pointer text-[14px] hover:text-[#F7B05B] duration-100 transition-all">
-            Get in Touch
-          </a>
-        </li>
+      {/* Desktop Navigation */}
+      <ul className="hidden lg:flex gap-10 bg-[#1a1a1a] py-3 px-8 rounded-full">
+        {["Process", "Testimonial", "About us", "FAQs", "Get in Touch"].map(
+          (item, index) => (
+            <li key={index}>
+              <a
+                href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                className="opacity-70 text-[14px] hover:text-[#F7B05B] transition-all duration-200"
+              >
+                {item}
+              </a>
+            </li>
+          )
+        )}
       </ul>
+
+      {/* Mobile Menu Button */}
+      <button
+        className="lg:hidden text-white"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <X size={28} /> : <Menu size={28} />}
+      </button>
+
+      {/* Mobile Navigation */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="absolute top-[60px] right-0 bg-[#1a1a1a] w-[200px] rounded-lg shadow-lg p-5 flex flex-col items-start"
+          >
+            {["Process", "Testimonial", "About us", "FAQs", "Get in Touch"].map(
+              (item, index) => (
+                <a
+                  key={index}
+                  href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
+                  className="block text-white py-2 opacity-70 hover:text-[#F7B05B] transition-all duration-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item}
+                </a>
+              )
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
