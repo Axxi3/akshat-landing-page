@@ -2,24 +2,19 @@ import React from 'react';
 
 export default function VideoCard() {
   return (
-    <div className="border lg:flex-grow md:w-[45%] w-full items-center justify-center border-white rounded-lg p-3 bg-[#1a1a1a]">
-     <img
-  src="https://placehold.co/1280x5000"
-  alt="Video Thumbnail"
-  className="rounded-md h-screen w-full object-cover"
-/>
-
-
-      <div className="flex gap-3 mt-3">
-        <img
-          src="https://placehold.co/75"
-          className="rounded-[100px]"
-          alt="Profile"
-        />
-        <div className="flex flex-col justify-center">
-          <h3 className="text-[20px] opacity-90">Roson Monses</h3>
-          <p className="text-[15px] text-[#c858ff]">60k+ Views</p>
-        </div>
+    <div className="border lg:w-[22%] md:w-[45%] w-full items-center justify-center border-white rounded-lg p-3 bg-[#1a1a1a]">
+      <div className="w-full aspect-[9/16] relative"> {/* Enforces 9:16 Aspect Ratio */}
+        <script src="https://fast.wistia.net/player.js" async></script>
+        <iframe
+          src="https://fast.wistia.net/embed/iframe/558kmm117t?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
+          title="Best 3 Video"
+          allow="autoplay; fullscreen"
+          allowTransparency="true"
+          frameBorder="0"
+          scrolling="no"
+          className="w-full h-full rounded-md"
+          name="wistia_embed"
+        ></iframe>
       </div>
     </div>
   );

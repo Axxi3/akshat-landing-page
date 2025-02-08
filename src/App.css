@@ -7,4 +7,12 @@ body{
   padding-right: 40px;
   font-family: "Poppins",sans-serif;
   color: #cccccc;
+  overflow-x: hidden;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
 }

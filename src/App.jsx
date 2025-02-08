@@ -19,7 +19,7 @@ function App() {
       <div className=" absolute w-full flex items-center justify-center">
         <img src={overlay} alt="" />
       </div>
-      <div className="fixed w-full z-99">
+      <div className="sticky w-full z-99">
       <Navbar/>
       </div>
       

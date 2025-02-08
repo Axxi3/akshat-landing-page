@@ -5,24 +5,24 @@ import chevron from "../assets/chevron.svg";
 
 const faqs = [
   {
-    question: "This is a sample Question 1",
+    question: "When can I expect to see results?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias numquam at eos consectetur voluptatem pariatur fuga nam ullam?",
+      "Many clients experience increased engagement and leads shortly after adopting new content strategies.",
   },
   {
-    question: "This is a sample Question 2",
+    question: "If I'm not completely satisfied with the content, can I request changes?",
     answer:
-      "Aperiam placeat velit modi beatae rerum perspiciatis recusandae corrupti dolorem, molestiae qui enim quas labore veritatis eligendi suscipit.",
+      "Yes, we're happy to make revisions to ensure the content aligns with your specific needs and objectives.",
   },
   {
-    question: "This is a sample Question 3",
+    question: "What sets your content creation services apart?",
     answer:
-      "Consequatur, ad minus porro, optio blanditiis earum officia ut, vero reprehenderit unde fuga suscipit?",
+      "Our goal is to not only attract an audience but to convert them into loyal customers.",
   },
   {
-    question: "This is a sample Question 4",
+    question: "Which pricing option best suits my business needs and budget?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, neque?",
+      "While many of our clients find the Buzzspear package to be the best fit, we offer a free consultation to help you determine the optimal solution for your specific needs. You can book this consultation by selecting our $0 pricing option.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function FAQs() {
   };
 
   return (
-    <div className="FAQs mt-[90px] flex flex-col gap-[15px] items-center justify-center">
+    <div id="FAQ" className="FAQs mt-[90px] flex flex-col gap-[15px] items-center justify-center">
       {/* Section Heading */}
       <div className="w-full flex items-center justify-center gap-2">
         <img src={bullet} alt="" />
