@@ -38,11 +38,11 @@ export default function FAQs() {
       {/* Section Heading */}
       <div className="w-full flex items-center justify-center gap-2">
         <img src={bullet} alt="" />
-        <div className="text-center uppercase text-[25px] text-[#F7B05B]">
+        <div className="text-center uppercase lg:text-[25px] text-[#F7B05B]">
           FAQS
         </div>
       </div>
-      <div className="w-[55%]">
+      <div className="lg:w-[55%] w-[80%]">
         <p className="text-[42px] tracking-tighter leading-[43px] text-center">
           Have More Questions?
         </p>
@@ -51,10 +51,13 @@ export default function FAQs() {
       {/* FAQ List */}
       <div className="flex flex-col gap-5 mt-[60px] lg:px-[10%]">
         {faqs.map((faq, index) => (
-          <div
+          <motion.div
             key={index}
-            className="FAQs__item p-6 bg-[#161616] rounded-xl cursor-pointer"
+            className={`FAQs__item p-6 rounded-xl cursor-pointer transition-colors duration-300 ${
+              openIndex === index ? "bg-[#292929]" : ""
+            }`}
             onClick={() => toggleFAQ(index)}
+            whileHover={{ scale: 1.02 }} // Small hover effect
           >
             {/* Question */}
             <div className="flex items-center justify-between w-full">
@@ -80,7 +83,7 @@ export default function FAQs() {
             >
               <p className="text-[18px] opacity-75">{faq.answer}</p>
             </motion.div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

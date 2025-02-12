@@ -45,7 +45,7 @@ export default function Testimonials() {
         </div>
 
         <div className="w-full px-[40px] mt-[80px] md:mb-[80px] mb-[80px]">
-          <div className="flex md:flex-row flex-col gap-[80px] items-center ">
+          <div className="flex lg:flex-row flex-col gap-[80px] items-center ">
             <div className=" flex flex-col w-fit items-center">
               <p className="text-[18px] opacity-75 text-center ">
                 Working with BuzzPear was a game-changer! Their ability to craft engaging videos helped our brand stand out.

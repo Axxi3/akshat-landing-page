@@ -109,7 +109,7 @@ export default function Herosection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className='text-[50px] leading-[72px] text-center font-semibold uppercase lg:mt-2 mt-[60px]'>
+          className='md:text-[50px] text-[35px] md:leading-[72px] text-center font-semibold uppercase lg:mt-2 mt-[60px]'>
           Tailored Short-Form Videos for Online Coaches & Business Owners
         </motion.h1>
       </div>

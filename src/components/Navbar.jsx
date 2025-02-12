@@ -14,8 +14,8 @@ export default function Navbar() {
         </h2>
       </div>
 
-      {/* Desktop Navigation */}
-      <ul className="hidden lg:flex gap-10 bg-[#1a1a1a] py-3 px-8 rounded-full">
+      {/* Desktop Navigation - Centered */}
+      <ul className="hidden lg:flex items-center gap-10 bg-[#1a1a1a] py-3 px-8 rounded-full absolute left-1/2 transform -translate-x-1/2">
         {["Process", "Testimonial", "About us", "FAQs", "Get in Touch"].map(
           (item, index) => (
             <li key={index}>

@@ -9,6 +9,7 @@ import Process from './components/Process';
 import Testimonials from './components/Testimonials';
 import FAQs from './components/FAQs';
 import Bookacall from './components/Bookacall';
+import Problem from "./components/Problems";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -33,6 +34,7 @@ function App() {
       <Aboutus />
       <Process />
       <Testimonials />
+      <Problem/>
       <FAQs />
       <Bookacall />
 
