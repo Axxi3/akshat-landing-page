@@ -5,26 +5,42 @@ import chevron from "../assets/chevron.svg";
 
 const faqs = [
   {
-    question: "When can I expect to see results?",
+    question: "How does this compare to hiring a content agency or ghostwriter?",
     answer:
-      "Many clients experience increased engagement and leads shortly after adopting new content strategies.",
+      "Unlike a ghostwriter or agency, where you still need to provide input, approve drafts, and record content, our AI model learns your patterns and speech delivery—then creates content for you indefinitely. You CREATE an asset for a lifetime that will generate content for you without ever needing you. You might occasionally record B-rolls, but that’s it. Train once, automate forever.",
   },
   {
-    question: "If I'm not completely satisfied with the content, can I request changes?",
+    question: "How much time does it take to train your AI model?",
     answer:
-      "Yes, we're happy to make revisions to ensure the content aligns with your specific needs and objectives.",
+      "We can start with as little as training it in 1 day, but we recommend around 1 week.",
   },
   {
-    question: "What sets your content creation services apart?",
+    question: "How do I get started?",
     answer:
-      "Our goal is to not only attract an audience but to convert them into loyal customers.",
+      "Book a quick call with us. We’ll discuss your goals and see if we can genuinely help you. If we’re a good fit, we start to train the AI on your voice and style, and start generating content immediately.",
   },
   {
-    question: "Which pricing option best suits my business needs and budget?",
+    question: "How often will you post content for me?",
     answer:
-      "While many of our clients find the Buzzspear package to be the best fit, we offer a free consultation to help you determine the optimal solution for your specific needs. You can book this consultation by selecting our $0 pricing option.",
+      "We offer flexible posting schedules—ranging from weekly to daily, based on your goals.",
+  },
+  {
+    question: "Is my voice and data secure?",
+    answer:
+      "Yes. We follow strict security protocols to protect your data. Your voice model cannot be accessed or used by anyone else.",
+  },
+  {
+    question: "Who owns the AI-generated content?",
+    answer:
+      "You do. Every post, video, and insight remains 100% your intellectual property.",
+  },
+  {
+    question: "Can I batch-create content for the entire month?",
+    answer:
+      "Yes. We can generate and schedule weeks of content in advance, ensuring you stay visible while focusing on your business.",
   },
 ];
+
 
 export default function FAQs() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -34,7 +50,7 @@ export default function FAQs() {
   };
 
   return (
-    <div id="FAQ" className="FAQs mt-[90px] flex flex-col gap-[15px] items-center justify-center">
+    <div id="faqs" className="FAQs mt-[90px] flex flex-col gap-[15px] items-center justify-center">
       {/* Section Heading */}
       <div className="w-full flex items-center justify-center gap-2">
         <img src={bullet} alt="" />

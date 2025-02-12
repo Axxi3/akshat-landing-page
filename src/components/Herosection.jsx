@@ -80,10 +80,10 @@ export default function Herosection() {
 
   return (
     <div className="hero-section relative py-[9%] px-[1%] ">
-      <div className=" absolute w-full top-20 right-8 lg:flex hidden items-end justify-end pr-[100px]">
+      <div className=" absolute w-full top-14 right-3 lg:flex hidden items-end justify-end pr-[100px]">
         <motion.img src={social} alt="" variants={socialVariants} initial="hidden" animate="visible" />
       </div>
-      <div className=" absolute w-full top-20 left-8 lg:flex hidden items-end justify-start pr-[100px]">
+      <div className=" absolute w-full top-14 left-3 lg:flex hidden items-end justify-start pr-[100px]">
         <motion.img src={like} alt="" variants={likeVariants} initial="hidden" animate="visible" />
       </div>
 
@@ -110,17 +110,10 @@ export default function Herosection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className='md:text-[50px] text-[35px] md:leading-[72px] text-center font-semibold uppercase lg:mt-2 mt-[60px]'>
-          Tailored Short-Form Videos for Online Coaches & Business Owners
+          We build AI Driven content engines for Entrepreneurs & VC
         </motion.h1>
       </div>
-      <motion.p
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className='mt-[15px] leading-6 opacity-70 md:px-[14%] text-[16px] text-center'>
-        Whether you're a relationship coach, fitness coach or a business owner, our expert team specializes in creating
-        content that inspire action and drive results to establish you as market leader in your niche.
-      </motion.p>
+      
       <div className="w-full flex items-center justify-center mt-[30px]">
         <motion.button
           initial={{ opacity: 0, y: 50, scale: 0.8 }}

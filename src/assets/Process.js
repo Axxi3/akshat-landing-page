@@ -13,26 +13,26 @@ const processSteps = [
     icon: strategyIcon
   },
   {
-    tag: "Content Design",
-    body: "Consistency means trust and with a solid foundation we will design the visual guidelines for editing your content. This builds authority and trust already warranted by your expertise.\n\nAlready have a brand? We will build a complimentary visual identity specific to videos.",
+    tag: "Training Your AI Twin",
+    body: "We start fine-tuning HeyGen & ElevenLabs with your voice, speech patterns, and delivery style, ensuring every piece of content sounds and looks like the real you. This step guarantees authenticity and consistency across all your content.",
     output: "Visual identity",
     icon: contentDesignIcon
   },
   {
-    tag: "Pre-Production",
-    body: "This is where you invest 1 hour a week and record a podcast with an industry expert, interview with our team, or record long-form videos from the scripts we send.\n\nNo overthinking, no confusion - Always create with confidence.",
+    tag: "AI Converts Your Voice Into High-Impact Content",
+    body: "Once we’ve successfully trained your AI avatar, we generate ultra-realistic voiceovers using ElevenLabs, making your content sound natural and engaging—without you ever recording a word.",
     output: "Systematic scheduling process",
     icon: preProductionIcon
   },
   {
-    tag: "Post-Production",
-    body: "We take all the raw content and our team turns it into authority-driven content that builds trust for your brand at scale. We create and post 20 videos a month on every platform mainly - Instagram, YouTube, and Linkedin.",
+    tag: " AI-Generated Video That Feels Real",
+    body: "Using HeyGen, we create lifelike talking-head videos of you delivering powerful messages—without you stepping in front of a camera. Your audience sees and hears you, but the AI does all the work.",
     output: "5 videos every week",
     icon: postProductionIcon
   },
   {
-    tag: "Backend automation",
-    body: "If you sell info-products we set automation and backend systems to predictably convert your followers into paying customers.",
+    tag: "Data-Driven Refinement for Explosive Growth",
+    body: "We track engagement, analyze what resonates, and tweak your content strategy. Every video gets smarter, more engaging, and delivers better results over time.",
     output: "Consistent organic leads",
     icon: backendAutomationIcon
   }

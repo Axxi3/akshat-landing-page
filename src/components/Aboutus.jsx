@@ -36,15 +36,15 @@ export default function Aboutus() {
     
 
   return (
-    <div id='about' className="About us mt-[150px] flex flex-col gap-[15px] items-center justify-center">
+    <div id='about-us' className="About us mt-[150px] flex flex-col gap-[15px] items-center justify-center">
       <div className="w-full flex items-center justify-center gap-2">
         <img src={bullet} alt="" />
         <div className="About us text uppercase text-[25px] text-[#F7B05B]">Introducing</div>
       </div>
       <div className=" lg:w-[80%] md:w-[100%] w-full">
-        <p className='lg:text-[42px] text-[35px] tracking-tighter leading-[43px] text-center'>Turning ordinary moments into extraordinary stories with our
-          visually stunning short-form videos tailored specifically to
-          your needs to sprinkle some magic onto your brand</p>
+        <p className='lg:text-[42px] text-[35px] tracking-tighter leading-[43px] text-center'>We help entrepreneurs and VCs expand their 
+          reach with our AI-powered content engine—building trust, attracting high-quality leads, and positioning 
+          them as the go-to authority in their industry on autopilot.</p>
       </div>
 
       <div
