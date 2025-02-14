@@ -54,18 +54,18 @@ export default function FAQs() {
       {/* Section Heading */}
       <div className="w-full flex items-center justify-center gap-2">
         <img src={bullet} alt="" />
-        <div className="text-center uppercase lg:text-[25px] text-[#F7B05B]">
+        <div className="text-center uppercase lg:text-[25px] text-[#BC53F0]">
           FAQS
         </div>
       </div>
-      <div className="lg:w-[55%] w-[80%]">
+      <div className="lg:w-[35%] w-[60%]">
         <p className="text-[42px] tracking-tighter leading-[43px] text-center">
           Have More Questions?
         </p>
       </div>
 
       {/* FAQ List */}
-      <div className="flex flex-col gap-5 mt-[60px] lg:px-[10%]">
+      <div className="flex flex-col gap-5 mt-[60px] lg:px-[13%]">
         {faqs.map((faq, index) => (
           <motion.div
             key={index}

@@ -34,7 +34,7 @@ export default function Testimonials() {
       >
         <div className="w-full flex items-center justify-center gap-2">
           <img src={bullet} alt="" />
-          <div className="About us text uppercase text-[25px] text-[#F7B05B]">
+          <div className="About us text uppercase text-[25px] text-[#BC53F0]">
             Customer Stories
           </div>
         </div>

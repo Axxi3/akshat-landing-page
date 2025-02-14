@@ -5,13 +5,14 @@ import Pentagon from "../assets/Pentagon.svg";
 import Stats from "../assets/stat.svg";
 import views from "../assets/views.svg";
 import { motion } from "framer-motion";
+import arrow from "../assets/arrow.svg"
 
 export default function Herosection() {
   const socialVariants = {
     hidden: { x: -5 },
     visible: {
-      x: [0, 3, -3, 0],
-      y: [0, -1, 1, 0],
+      x: [0, 6, -6, 0],
+      y: [0, -4, 4, 0],
       transition: {
         duration: 6,
         repeat: Infinity,
@@ -24,8 +25,8 @@ export default function Herosection() {
   const likeVariants = {
     hidden: { y: 5 },
     visible: {
-      x: [0, -2, 2, 0],
-      y: [0, 2, -0.5, 0],
+      x: [0, -5, 5, 0],
+      y: [0, 5, -3.5, 0],
       transition: {
         duration: 7,
         repeat: Infinity,
@@ -38,8 +39,8 @@ export default function Herosection() {
   const viewsVariants = {
     hidden: { x: 5 },
     visible: {
-      x: [0, 1.5, -3.5, 0],
-      y: [0, 0.5, -1.5, 0],
+      x: [0, 3.5, -5.5, 0],
+      y: [0, 2.5, -3.5, 0],
       transition: {
         duration: 5.5,
         repeat: Infinity,
@@ -87,8 +88,12 @@ export default function Herosection() {
         <motion.img src={like} alt="" variants={likeVariants} initial="hidden" animate="visible" />
       </div>
 
-      <div className=" absolute w-full -bottom-11 left-8 lg:flex hidden items-end justify-start pr-[100px]">
+      <div className=" absolute w-full -bottom-20 left-30 lg:flex hidden items-end justify-start pr-[100px]">
         <motion.img src={views} alt="" variants={viewsVariants} initial="hidden" animate="visible" />
+      </div>
+
+      <div className=" absolute w-[300px] bottom-3 left-70 rotate-10  lg:flex hidden items-end justify-start pr-[100px]">
+        <motion.img src={arrow} alt="" variants={viewsVariants} initial="hidden" animate="visible" />
       </div>
       <div className=" absolute rotate-12 w-full -bottom-4 gap-[20px] left-8 flex items-start justify-center pr-[100px]">
         <motion.img src={Pentagon} alt="" variants={pentagonVariants} initial="hidden" animate="visible" />
@@ -100,6 +105,10 @@ export default function Herosection() {
           initial="hidden"
           animate="visible"
         />
+      </div>
+
+      <div className=" absolute w-[300px] bottom-60 right-20 -rotate-75  lg:flex hidden items-end justify-start pr-[100px]">
+        <motion.img src={arrow} alt="" variants={viewsVariants} initial="hidden" animate="visible" />
       </div>
       <div className=" absolute w-full -bottom-11 right-8 lg:flex hidden items-end justify-end pr-[100px]">
         <motion.img src={Stats} alt="" variants={statsVariants} initial="hidden" animate="visible" />
@@ -119,7 +128,7 @@ export default function Herosection() {
           initial={{ opacity: 0, y: 50, scale: 0.8 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-          className='  py-2.5 px-7 rounded-md font-semibold bg-[#F7B05B] text-white'>
+          className='  py-2.5 px-7 rounded-md font-semibold bg-[#BC53F0] text-white'>
           Book a call
         </motion.button>
       </div>

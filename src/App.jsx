@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials';
 import FAQs from './components/FAQs';
 import Bookacall from './components/Bookacall';
 import Problem from "./components/Problems";
+import cursor from "../public/cursor.svg"
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -18,7 +19,9 @@ function App() {
   const slowScroll = useTransform(scrollYProgress, [0, 1], [0, 0.5]);
 
   return (
-    <motion.div style={{ y: slowScroll }} className="relative">
+    <motion.div style={{ cursor: `url(cursor.svg),auto`,y: slowScroll }} className="relative"
+    
+    >
       {/* Background Overlay */}
       <div className="absolute w-full flex items-center justify-center">
         <img src={overlay} alt="" />
@@ -33,7 +36,7 @@ function App() {
       <Herosection />
       <Aboutus />
       <Process />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Problem/>
       <FAQs />
       <Bookacall />

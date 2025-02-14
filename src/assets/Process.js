@@ -3,6 +3,8 @@ import contentDesignIcon from "./2.svg";
 import preProductionIcon from "./3.svg";
 import postProductionIcon from "./4.svg";
 import backendAutomationIcon from "./5.svg";
+import newno5 from "./55.svg"
+import six from "./6.svg"
 
 const processSteps = [
  
@@ -31,11 +33,24 @@ const processSteps = [
     icon: postProductionIcon
   },
   {
-    tag: "Data-Driven Refinement for Explosive Growth",
-    body: "We track engagement, analyze what resonates, and tweak your content strategy. Every video gets smarter, more engaging, and delivers better results over time.",
-    output: "Consistent organic leads",
-    icon: backendAutomationIcon
+    tag: "Formatting, Editing & Automated Distribution",
+    body: "We refine, format, and optimize each piece for social platforms like Instagram and LinkedIn, then schedule and post it automatically. You stay top-of-mind, building authority effortlessly.",
+    output: "Hands-free content posting",
+    icon: newno5
+  },
+  {
+    tag: "Community Engagement & Monetization",
+    body: "We help you turn your audience into an engaged community. By analyzing interactions, responding to comments, and strategically monetizing content, we ensure your content drives meaningful connections and revenue.",
+    output: "Engaged community & revenue streams",
+    icon: six
   }
+
+
+
+
+
+ 
+
 ];
 
 export default processSteps;

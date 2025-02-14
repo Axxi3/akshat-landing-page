@@ -10,7 +10,7 @@ export default function Navbar() {
       {/* LOGO */}
       <div className="LOGO">
         <h2 className="text-[26px] font-bold">
-          Syncwave<span className="text-[#F7B05B]">Media</span>
+        AInno<span className="text-[#BC53F0]">vate</span>
         </h2>
       </div>
 
@@ -21,7 +21,7 @@ export default function Navbar() {
             <li key={index}>
               <a
                 href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-                className="opacity-70 text-[14px] hover:text-[#F7B05B] transition-all duration-200"
+                className="opacity-70 text-[14px] hover:text-[#BC53F0] transition-all duration-200"
               >
                 {item}
               </a>
@@ -52,7 +52,7 @@ export default function Navbar() {
                 <a
                   key={index}
                   href={`#${item.toLowerCase().replace(/\s+/g, "-")}`}
-                  className="block text-white py-2 opacity-70 hover:text-[#F7B05B] transition-all duration-200"
+                  className="block text-white py-2 opacity-70 hover:text-[#BC53F0] transition-all duration-200"
                   onClick={() => setIsOpen(false)}
                 >
                   {item}
