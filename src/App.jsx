@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import './App.css';
 import Navbar from './components/Navbar';
 import overlay from "./assets/Overlay.svg";
+import logoA from "/logoA.png"
 
 import Herosection from './components/Herosection';
 import Aboutus from './components/Aboutus';
@@ -11,6 +12,7 @@ import FAQs from './components/FAQs';
 import Bookacall from './components/Bookacall';
 import Problem from "./components/Problems";
 import cursor from "../public/cursor.svg"
+import Stats from "./components/Subcomponent/Stats";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -37,6 +39,7 @@ function App() {
       <Aboutus />
       <Process />
       {/* <Testimonials /> */}
+      <Stats/>
       <Problem/>
       <FAQs />
       <Bookacall />
@@ -44,7 +47,7 @@ function App() {
       {/* Footer */}
       <div className="flex flex-col gap-5 w-full items-center justify-center p-10">
         <img
-          src="https://placehold.co/75"
+          src={logoA}
           className="rounded-[100px] w-[100px] h-[100px]"
           alt="Profile"
         />

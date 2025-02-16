@@ -4,6 +4,8 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import bullet from "../assets/bullet.svg";
 import process1 from "../assets/process1.svg";
 import Tags from './Subcomponent/Tags';
+import note from "../assets/note.svg"
+import progress from "../assets/progress.svg"
 
 export default function Problem() {
   const targetRef = useRef(null);
@@ -58,9 +60,9 @@ export default function Problem() {
             style={{ y: bottomCardY, opacity: fadeIn }}
             transition={{ ease: "easeInOut", duration: 1.5 }} 
           >
-            <div>
-              <img className='w-[100px] h-[100px]' src={process1} alt="" />
-            </div>
+             <div className="w-[100px] h-[100px] flex items-center justify-center rounded-full bg-[#161616] border-[5px] border-[#161616]">
+    <img className='w-[50px] h-[50px]' src={note} alt="" />
+  </div>
             <div className="Text flex flex-col gap-2">
               <h3 className='text-[26px] font-medium'>Tailored Strategies</h3>
               <p className='text-[18px] opacity-65'>We craft unique approaches to match your brand's vision</p>
@@ -69,24 +71,28 @@ export default function Problem() {
 
           {/* Third Card - Moves right to center */}
           <motion.div
-            className='flex flex-col gap-8 bg-[#1C1C1C] w-[80%] lg:w-[25%] rounded-2xl p-[29px]'
-            style={{ x: rightCardX, opacity: fadeIn }}
-            transition={{ ease: "easeInOut", duration: 1.5 }} 
-          >
-            <div>
-              <img className='w-[100px] h-[100px]' src={process1} alt="" />
-            </div>
-            <div className="Text flex flex-col gap-2">
-              <h3 className='text-[26px] font-medium'>Consistent Growth</h3>
-              <p className='text-[18px] opacity-65'>We ensure sustained engagement and visibility</p>
-            </div>
-          </motion.div>
+  className='flex flex-col gap-8 bg-[#1C1C1C] w-[80%] lg:w-[25%] rounded-2xl p-[29px]'
+  style={{ x: rightCardX, opacity: fadeIn }}
+  transition={{ ease: "easeInOut", duration: 1.5 }} 
+>
+  {/* Image with circular border */}
+  <div className="w-[100px] h-[100px] flex items-center justify-center rounded-full bg-[#161616] border-[5px] border-[#161616]">
+    <img className='w-[50px] h-[50px]' src={progress} alt="" />
+  </div>
+
+  {/* Text Content */}
+  <div className="Text flex flex-col gap-2">
+    <h3 className='text-[26px] font-medium'>Consistent Growth</h3>
+    <p className='text-[18px] opacity-65'>We ensure sustained engagement and visibility</p>
+  </div>
+</motion.div>
+
 
         </div>
 
         {/* Tags Section */}
         <div className="w-full px-[20%] items-center justify-center mt-[30px] hidden lg:flex gap-10 flex-wrap">
-          <Tags /><Tags /><Tags /><Tags /><Tags />
+          <Tags name={"Quick Revisions"} /><Tags name={"24*7 support"} /><Tags name={"Flexible Timing"} /><Tags name={"Trend Report"} /><Tags name={"Growth Analysis"} />
         </div>
 
       </div>

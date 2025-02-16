@@ -107,7 +107,7 @@ export default function Testimonials() {
 
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
-        <Stats />
+       
       </motion.div>
     </>
   );

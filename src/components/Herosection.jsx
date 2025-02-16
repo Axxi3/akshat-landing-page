@@ -124,14 +124,17 @@ export default function Herosection() {
       </div>
       
       <div className="w-full flex items-center justify-center mt-[30px]">
-        <motion.button
-          initial={{ opacity: 0, y: 50, scale: 0.8 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-          className='  py-2.5 px-7 rounded-md font-semibold bg-[#BC53F0] text-white'>
-          Book a call
-        </motion.button>
-      </div>
+        <a href="https://calendly.com/akshath007/30min" target="_blank" rel="noopener noreferrer">
+          <motion.button
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+            className='py-2.5 px-7 rounded-md font-semibold bg-[#BC53F0] text-white'
+          >
+            Book a call
+          </motion.button>
+          </a>
+    </div>
     </div>
   );
 }
