@@ -53,8 +53,14 @@ function App() {
         />
         <h1 className="text-[20px]">Connect with us</h1>
         <ul className="flex gap-5">
-          <li className="text-[18px] opacity-75">Instagram</li>
-          <li className="text-[18px] opacity-75">Linkedin</li>
+        <li className="text-[18px] opacity-75">
+          <a href="https://www.instagram.com/ainnovate.in?igsh=ZWs0ODE0M29pc24w&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+            
+            </li>
+            <li className="text-[18px] opacity-75">
+          <a href="https://www.linkedin.com/company/ainnovate-in/about/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            
+            </li>
         </ul>
       </div>
     </motion.div>

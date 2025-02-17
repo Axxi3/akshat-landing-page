@@ -16,7 +16,7 @@ export default function Navbar() {
 
       {/* Desktop Navigation - Centered */}
       <ul className="hidden lg:flex items-center gap-10 bg-[#1a1a1a] py-3 px-8 rounded-full absolute left-1/2 transform -translate-x-1/2">
-        {["Process", "Testimonial", "About us", "FAQs", "Get in Touch"].map(
+        {["Process", "About us", "FAQs", "Get in Touch"].map(
           (item, index) => (
             <li key={index}>
               <a
@@ -47,7 +47,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-[60px] right-0 bg-[#1a1a1a] w-[200px] rounded-lg shadow-lg p-5 flex flex-col items-start"
           >
-            {["Process", "Testimonial", "About us", "FAQs", "Get in Touch"].map(
+            {["Process", "About us", "FAQs", "Get in Touch"].map(
               (item, index) => (
                 <a
                   key={index}
