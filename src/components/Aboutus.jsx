@@ -39,7 +39,7 @@ export default function Aboutus() {
     <div id='about-us' className="About us mt-[150px] flex flex-col gap-[15px] items-center justify-center">
       <div className="w-full flex items-center justify-center gap-2">
         <img src={bullet} alt="" />
-        <div className="About us text uppercase text-[25px] text-[#BC53F0]">Introducing</div>
+        <div className="About us text uppercase text-[25px] text-[#BC53F0]">INTRODUCING US</div>
       </div>
       <div className=" lg:w-[80%] md:w-[100%] w-full">
         <p className='lg:text-[42px] text-[35px] tracking-tighter leading-[43px] text-center'>We help entrepreneurs and VCs expand their 
